@@ -1,9 +1,3 @@
-# This docker file can be used in kubernetes. 
-# It accepts all cluster related parameters at run time. 
-# It means it's very easy to add new containers to the cluster 
-
-#FROM ubuntu:20.04
-
 FROM rockylinux/rockylinux:8.6
 ARG AntMediaServer
 
