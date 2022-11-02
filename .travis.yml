@@ -1,0 +1,7 @@
+services:
+  - docker
+  
+before_install:
+  - sudo apt-get update
+  - sudo apt-get install wget
+  - wget -O ant.zip https://github.com/ant-media/Ant-Media-Server/releases/download/ams-v2.5.1/ant-media-server-community-2.5.1.zip
