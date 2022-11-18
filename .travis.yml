@@ -10,5 +10,5 @@ before_install:
 
 
 script:
-  - if [[ $TRAVIS_EVENT_TYPE == "cron" ]]; then echo "This is a cron job"; fi
+  - if [[ `docker ps` != "0" ]]; then echo "Success"; fi
 
