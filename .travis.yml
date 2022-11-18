@@ -10,4 +10,5 @@ before_install:
 
 
 script:
-  - docker ps 
+  - if [[ docker ps  != "0" ]]; then echo "Success."; fi
+
