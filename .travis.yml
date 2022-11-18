@@ -7,7 +7,7 @@ before_install:
   - wget -O ant.zip https://github.com/ant-media/Ant-Media-Server/releases/download/ams-v2.5.1/ant-media-server-community-2.5.1.zip
   - docker build --network=host -t antmediaserver --build-arg AntMediaServer=ant.zip .
   - docker run -d --name antmedia --network=host -it antmediaserver
-  - docker ps 
+
 
 script:
-- echo "$?"
+  - docker ps 
