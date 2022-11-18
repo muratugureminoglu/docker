@@ -10,4 +10,4 @@ before_install:
   - docker ps 
 
 script:
-- echo "Success."
+- echo "$?"
