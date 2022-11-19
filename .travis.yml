@@ -10,6 +10,7 @@ before_install:
 
 
 script:
+  - sleep 10
   - wget http://localhost:5080 -O index.html
 
 
