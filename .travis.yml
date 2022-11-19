@@ -10,9 +10,6 @@ before_install:
 
 
 script:
-  - ip a
-  - docker ps 
-  - sleep 20
   - wget http://localhost:5080 -O index.html
 
 
