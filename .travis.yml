@@ -10,5 +10,8 @@ before_install:
 
 
 script:
+  - ip a
+  - docker ps 
   - wget http://172.17.0.1:5080 -O index.html
+
 
